@@ -16,6 +16,11 @@ Get favicon from [GoogleUserContent favicons](https://s2.googleusercontent.com/s
 
 Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.com/)  
 
+## Specification
+
+file `.htaccess` do url rewriting for client-side request ( refreshing or typing uris)  
+file `jsconfig.json` is config for rebase absolute imports   
+
 
 
 
