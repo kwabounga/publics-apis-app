@@ -19,8 +19,8 @@ Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.co
 ## Specification
 
 file `.htaccess` do url rewriting for client-side request ( refreshing or typing uris)  
-- for Apache Server only. (to put in the root folder of the app)  
-- see the Fb Official Doc [ here](https://create-react-app.dev/docs/deployment/#serving-apps-with-client-side-routing) and [Aidin](https://stackoverflow.com/users/6868584/aidin) comment for the issue  [react-router-urls-dont-work-when-refreshing-or-writing-manually](https://qastack.fr/programming/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually) on [QAStack](https://qastack.fr/)
+- for Apache HTTP Server only. (to put in the root folder of the app)  
+- see the Fb Official Doc [ here](https://create-react-app.dev/docs/deployment/#serving-apps-with-client-side-routing) and [Aidin](https://stackoverflow.com/users/6868584/aidin) comment for the issue  [react-router-urls-dont-work-when-refreshing-or-writing-manually](https://qastack.fr/programming/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually) on [QAStack](https://qastack.fr/) for do the same on Nginx Server or Apache Tomcat
 
 file `jsconfig.json` is config for rebase absolute imports   
 
