@@ -1,4 +1,4 @@
-# Application Puplics APIs
+# Application Publics APIs
 
 
 
@@ -28,9 +28,7 @@ file `jsconfig.json` is config for rebase absolute imports
 in `package.json` the followed line specify the baseUrl for build  
 ```json
 {
-    ...
     "homepage": "https://kwabounga.fr/publics-apis-app",
-    ...
 }
 ```
 
