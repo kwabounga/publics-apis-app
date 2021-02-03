@@ -7,15 +7,15 @@ It Using [Material-kit-React](https://github.com/creativetimofficial/material-ki
 
 ## Used APIs
 
-List APIs from [Public API](https://github.com/public-apis/public-apis) using [API Public-API](https://github.com/davemachado/public-api)  
+- List APIs from [Public API](https://github.com/public-apis/public-apis) using [API Public-API](https://github.com/davemachado/public-api)  
 
-Translate Texts with [Frengly](https://frengly.com/translate)  
+- Translate Texts with [Frengly](https://frengly.com/translate)  
 
-Get favicon from [GoogleUserContent favicons](https://s2.googleusercontent.com/s2/favicons)  
+- Get favicon from [GoogleUserContent favicons](https://s2.googleusercontent.com/s2/favicons)  
 
-Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.com/)  
+- Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.com/)  
 
-## Specification
+## Specifications
 
 1. file `.htaccess` do url rewriting for client-side request ( refreshing or typing uris)  
    - for Apache HTTP Server only. (to put in the root folder of the app)  
@@ -23,7 +23,7 @@ Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.co
 
 2. file `jsconfig.json` is config for rebase absolute imports   
 
-### Routing  
+## Routing  
 - in `package.json` the followed line specify the baseUrl for build  
 ```json
 {
