@@ -1,6 +1,5 @@
-# Application Publics APIs
-
 ![icon](public/logo192.png)  
+# Application Publics APIs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
 
@@ -25,7 +24,7 @@ Screenshots the APIs websites with [APIFlash Screenshot API](https://apiflash.co
 2. file `jsconfig.json` is config for rebase absolute imports   
 
 ### Routing  
-in `package.json` the followed line specify the baseUrl for build  
+- in `package.json` the followed line specify the baseUrl for build  
 ```json
 {
     "homepage": "https://kwabounga.fr/publics-apis-app",
@@ -33,7 +32,7 @@ in `package.json` the followed line specify the baseUrl for build
 ```
 
 
-and `basename` prop in `index.js` add baseUrl to the `<Links/>` urls
+- and `basename` prop in `index.js` add baseUrl to the `<Links/>` urls
 ```js
 <Router basename="/publics-apis-app">
 ```
