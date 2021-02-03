@@ -72,7 +72,7 @@ export default function HeaderLinks(props) {
       {/* github link */}      
       <ListItem className={classes.listItem}>
         <Button
-          href={cst.urls.me.github}
+          href={`${cst.urls.me.github}/publics-apis-app`}
           color="transparent"
           target="_blank"
           rel="noopener noreferrer"
