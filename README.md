@@ -24,7 +24,7 @@ file `.htaccess` do url rewriting for client-side request ( refreshing or typing
 
 file `jsconfig.json` is config for rebase absolute imports   
 
-### Routing
+### Routing  
 in `package.json` the followed line specify the baseUrl for build  
 ```json
 {
