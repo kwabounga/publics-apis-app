@@ -1,4 +1,4 @@
-# Application Puplis APIs
+# Application Puplics APIs
 
 
 
