@@ -17,7 +17,7 @@ exports.cst = {
         publicApisBaseUrl:"https://api.publicapis.org",
         translateApi:"https://yandextranslatezakutynskyv1.p.rapidapi.com/translate",
         favicons:"https://s2.googleusercontent.com/s2/favicons?domain_url=",
-        urlToImg:"https://api.apiflash.com/v1/urltoimage?access_key=589a39834a204c559cdb3dad47081d58&url=",
+        urlToImg:"https://api.apiflash.com/v1/urltoimage?access_key=" + process.env.REACT_APP_URLTOIMG + "&url=",
       },
     },
     locales:{

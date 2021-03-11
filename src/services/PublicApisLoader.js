@@ -71,7 +71,7 @@ export const ApiLoader = {
     const key = '017a9b928cmsh5632868675b295cp119a9djsnb16c0ccc86b2';
     const headers = {
       "content-type": "application/x-www-form-urlencoded",
-      "x-rapidapi-key": "017a9b928cmsh5632868675b295cp119a9djsnb16c0ccc86b2",
+      "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI,
       "x-rapidapi-host": "YandexTranslatezakutynskyV1.p.rapidapi.com"
     };
     const postOptions = {
