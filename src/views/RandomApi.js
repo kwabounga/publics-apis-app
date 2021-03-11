@@ -48,7 +48,7 @@ function AllApis(props) {
           setIsLoading(false);
         }
       );
-  });
+  },[isLoading]);
 
   return (
     <MainStructure>

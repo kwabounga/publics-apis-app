@@ -33,7 +33,7 @@ function Categories(props) {
           setIsLoading(false);
         }
       );
-  }, []);
+  },[isLoading]);
 
   return (
     <MainStructure>

@@ -39,7 +39,7 @@ function SelectedCategory(props) {
           setIsLoading(false);
         }
       );
-  });
+  },[isLoading]);
 
   return (
     <MainStructure>

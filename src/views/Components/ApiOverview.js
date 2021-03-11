@@ -28,7 +28,7 @@ export default function ApiOverview(props) {
       className={classes.imgRoundedCircle + " " + classes.imgFluid}
     />
   );
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [colorHeader] = useState("primary");
   const [description, setDescription] = useState(api.Description);
   useEffect(() => {
@@ -50,7 +50,8 @@ export default function ApiOverview(props) {
           setIsLoading(false);
         }
       );
-  }, [description]);
+    
+  }, [description,isLoading]);
 
   return (
     <GridItem xs={12} sm={12} md={6}>
@@ -79,7 +80,7 @@ export default function ApiOverview(props) {
             tabIcon: Description,
             tabContent: (
               <p className={classes.textCenter}>
-                {Locales.instance.isFR ? description : api.Description}
+                {Locales.instance.isFR ? api.Description : api.Description}
               </p>
             ),
           },

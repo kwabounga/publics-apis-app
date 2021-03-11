@@ -32,7 +32,7 @@ function AllApis(props) {
           setIsLoading(false);
         }
       );
-  });
+  },[isLoading]);
 
   return (
     <MainStructure>
@@ -52,8 +52,9 @@ function AllApis(props) {
         </div>
       ) : (
         <GridContainer>
-          {allApis.map((cat, i) => {
-            return <ApiOverview  key={cat.Category + "-" + i} cat={cat} />;
+          {allApis.map((api, i) => {
+            // return <ApiOverview  key={cat.Category + "-" + i} cat={cat} />;
+            return <ApiOverview key={api.Category + "-" + i} api={api} />;
           })}
         </GridContainer>
       )}

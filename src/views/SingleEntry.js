@@ -17,7 +17,7 @@ function SingleEntry(props) {
   const classes = useStyles();
   const [img, setImg] = useState(null);  
   const { location } = props;
-  const api = location.state.category || null;
+  const api = location.state.api || null;
 
   // verification de la présence de l'objet api
   useEffect(() => {

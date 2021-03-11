@@ -1,6 +1,6 @@
 import { cst } from "exports/const";
 const baseUrl = cst.urls.api.publicApisBaseUrl;
-const frenglyUrl = cst.urls.api.frengly;
+const translateApi = cst.urls.api.translateApi;
 
 export const ApiLoader = {
   /**
@@ -68,25 +68,21 @@ export const ApiLoader = {
    * @return {Promise} - le texte en FR
    */
   Translate: function (text) {
+    const key = '017a9b928cmsh5632868675b295cp119a9djsnb16c0ccc86b2';
     const headers = {
-      // eslint-disable-next-line
-      "Access-Control-Request-Headers": "Content-Type",
-      // eslint-disable-next-line
-      "Access-Control-Request-Headers": "accept, content-type",
-      "Access-Control-Request-Method": "GET, PUT, POST, DELETE, HEAD, OPTIONS",
-      "Content-Type": "application/json;charset=UTF-8",
+      "content-type": "application/x-www-form-urlencoded",
+      "x-rapidapi-key": "017a9b928cmsh5632868675b295cp119a9djsnb16c0ccc86b2",
+      "x-rapidapi-host": "YandexTranslatezakutynskyV1.p.rapidapi.com"
     };
     const postOptions = {
       method: "POST",
       headers: headers,
-      body: JSON.stringify({
-        src: "en",
-        dest: "fr",
-        text: text,
-        email: "jeanyves.chaillou@gmail.com",
-        password: "le_mot_de_passe",
-      }),
+      body: JSON.stringify( {
+        apiKey: key,
+        lang: "fr",
+        text: text
+        }),
     };
-    return fetch(`${frenglyUrl}`, postOptions);
+    return fetch(`${translateApi}`, postOptions);
   },
 };
